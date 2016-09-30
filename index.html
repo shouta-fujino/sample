@@ -4,28 +4,16 @@
     <meta charset="utf-8">
     <title>Push API sample</title>
     <link rel="manifest" href="manifest.json">
-    <script type = "text/javascript" src="serviceWorker.js" />
-    <script type = "text/javascript" src="js/webapp.js" />
-    <script>
-      (function (){
-        window.addEventListener('load', function() {
-          if ('serviceWorker' in navigator) {
-              navigator.serviceWorker.register("/serviceWorker.js")
-              .then(function(registration) {
-                  console.log("serviceWorker registed.");
-              }).catch(function(error) {
-                  console.log("serviceWorker error.", error);
-                  //console.warn("serviceWorker error.", error);
-              });
-          }
-        });
-      })
-  </script>
 
   </head>
   <body>
     <button id="register">インストール1</button>
     <button id="push" disabled>プッシュ通知を有効にする</button>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type = "text/javascript" src="serviceWorker.js"></script>
+    <!--<script type = "text/javascript" src="js/webapp.js"></script>-->
+    <script src="main.js"></script>
   </body>
 
 </html>
