@@ -13,6 +13,9 @@
                 }).then(function(f) {
                     debugger;
                     console.log(f);
+                }, function(err) {
+                    debugger;
+                    console.log(err);
                 })
 
             }, function(err) {
