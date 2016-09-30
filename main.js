@@ -7,10 +7,14 @@
                     console.log(subscription);
                     return subscription
                 }
-                var subscription = registration.pushManager.subscribe({
+                debugger;
+                return registration.pushManager.subscribe({
                     userVisibleOnly: true
+                }).then(function(f) {
+                    debugger;
+                    console.log(f);
                 })
-                return subscription;
+
             }, function(err) {
                 console.log(err);
             })
