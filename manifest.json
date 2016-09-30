@@ -1,14 +1,16 @@
 {
-    "name": "GAMY（ゲーミー）- みんなのゲーム攻略メディア",
-    "short_name": "GAMY攻略",
+    "name": "push通知テスト",
+    "short_name": "unkテスト",
     "icons": [
         {
-            "src": "/static/img/icon/144.png",
+            "src": "/img/piggy.jpeg",
             "sizes": "144x144",
             "type": "image/png"
         }
     ],
     "start_url": "/",
     "display": "standalone",
-    "theme_color": "#e91e63"
+    "theme_color": "#e91e63",
+    "gcm_user_visible_only": true,
+    "gcm_sender_id": "529698506349"
 }
