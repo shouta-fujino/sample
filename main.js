@@ -13,7 +13,7 @@
 
     window.addEventListener('load', function() {
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/serviceWorker.js')
+        navigator.serviceWorker.register('serviceWorker.js')
         .then(function(registration) {
             return registration.pushManager.getSubscription().then(function(subscription) {
             if (subscription) {
