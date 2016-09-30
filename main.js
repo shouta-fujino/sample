@@ -27,7 +27,7 @@
             var endpoint = subscription.endpoint
             console.log("pushManager endpoint:", endpoint) // https://android.googleapis.com/gcm/send/******:******......
         }).catch(function(error) {
-            console.warn("serviceWorker error:", error)
+            console.log("serviceWorker error:", error)
         })
     }
     })
