@@ -10,6 +10,8 @@
                 return registration.pushManager.subscribe({
                     userVisibleOnly: true
                 })
+            }, function(err) {
+                console.log(err);
             })
         }).then(function(subscription) {
             var endpoint = subscription.endpoint
