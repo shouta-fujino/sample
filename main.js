@@ -7,9 +7,10 @@
                     console.log(subscription);
                     return subscription
                 }
-                return registration.pushManager.subscribe({
+                var subscription = registration.pushManager.subscribe({
                     userVisibleOnly: true
                 })
+                return subscription;
             }, function(err) {
                 console.log(err);
             })
