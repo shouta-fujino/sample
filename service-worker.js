@@ -3,7 +3,7 @@
 self.addEventListener('push', function(event) {
   console.log('Received a push message', event);
 
-  // test2
+  // test3
   var title = 'Yay a message.';
   var body = 'We have received a push message.';
   var icon = 'images/icon-192x192.png';
